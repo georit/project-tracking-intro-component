@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Project tracking intro component</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Project tracking intro component</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendors/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ***main navigation*** -->
+      <nav class="main-nav">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">product</a></li>
+          <li class="nav-link"><a href="#">features</a></li>
+          <li class="nav-link"><a href="#">pricing</a></li>
+          <li class="nav-link">
+            <i class="fas fa-circle"></i>
+          </li>
+          <li class="nav-link"><a href="#">login</a></li>
+        </ul>
+      </nav>
+
+      <!-- ******hero***** -->
+      <div class="hero">
+        <!-- ***hero image*** -->
+        <div class="hero-img-container">
+          <img
+            src="./images/illustration-devices.svg"
+            alt="Illustration of electronic devices"
+            class="hero-img"
+          />
+          <div class="bg-hero"></div>
+        </div>
+
+        <!-- ***hero text*** -->
+        <div class="hero-text">
+          <p class="new-monograph">
+            new
+            <span class="word-new">monograph dashboard</span>
+          </p>
+          <h1 class="main-heading">powerful insights into your team</h1>
+          <p class="hero-info">
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="schedule-demo-container">
+            <a href="#" class="btn-schedule-demo">schedule a demo</a>
+            <p class="schedule-demo-info">to see a preview</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,35 @@
+/* *****custom variables***** */
+:root {
+  /* ***primary colors*** */
+  --red: hsl(0, 100%, 68%);
+
+  /* ***neutral colors*** */
+  --very-dark-blue: hsl(230, 29%, 20%);
+  --dark-grayish-blue: hsl(230, 11%, 40%);
+  --grayish-blue: hsl(231, 7%, 65%);
+  --light-grayish-blue: hsl(207, 33%, 95%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ***fonts*** */
+  --headings-font: "Barlow Condensed", sans-serif;
+  --body-font: "Barlow", sans-serif;
+}
+
+/* *****general styles***** */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--grayish-blue);
+  font-family: var(--body-font);
+  font-size: 18px;
+  min-width: 100vw;
+  max-width: 1980px;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
