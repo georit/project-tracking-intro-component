@@ -58,6 +58,7 @@ ul.nav-links.hidden {
 div.wrapper {
   min-width: 100vw;
   min-height: 100vh;
+  padding-bottom: 3rem;
   position: relative;
 }
 
@@ -210,4 +211,140 @@ a.btn-schedule-demo {
 
 p.schedule-demo-info {
   letter-spacing: 2px;
+}
+
+/* *****media queries***** */
+@media screen and (min-width: 768px) {
+  /* *****general styles***** */
+  ul.nav-links.hidden {
+    display: flex;
+  }
+
+  /* *****wrapper***** */
+  div.wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    position: relative;
+  }
+
+  /* ***main nav*** */
+  nav.main-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul.nav-links {
+    background-color: transparent;
+    border-radius: unset;
+    box-shadow: unset;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  ul.nav-links li.nav-link {
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+  ul.nav-links li.nav-link:last-child {
+    margin-right: 0;
+  }
+
+  ul.nav-links li.nav-link:nth-child(4) {
+    display: block;
+  }
+
+  ul.nav-links li.nav-link:nth-child(4) i {
+    font-size: 0.5rem;
+    padding: 0.4375rem 0;
+  }
+
+  ul.nav-links li.nav-link a {
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+
+  ul.nav-links li.nav-link a:hover {
+    border-bottom: 2px solid var(--very-dark-blue);
+  }
+
+  ul.nav-links li.nav-link:last-child a:hover {
+    border-bottom: 2px solid var(--grayish-blue);
+  }
+
+  i.mobile-nav-toggle {
+    display: none;
+  }
+
+  /* ***hero*** */
+  div.hero,
+  div.hero-img-container {
+    width: 100%;
+  }
+
+  div.hero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  div.hero-img-container {
+    position: relative;
+    overflow: hidden;
+    order: 2;
+    width: 45%;
+    padding-top: 5rem;
+  }
+
+  img.hero-img {
+    padding-left: 2%;
+    padding-top: 15vh;
+    padding-bottom: 5rem;
+    width: 140%;
+  }
+
+  div.bg-hero {
+    background-color: var(--light-grayish-blue);
+    border-bottom-left-radius: 70px;
+    height: 55vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  /* ***hero text*** */
+  div.hero-text {
+    padding-right: 0;
+    padding-top: 10rem;
+    width: 50%;
+  }
+
+  a.btn-schedule-demo {
+    transition: all 0.3s;
+  }
+
+  a.btn-schedule-demo:hover {
+    filter: brightness(150%);
+    -webkit-filter: brightness(150%);
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  h1.main-heading {
+    font-size: 3.5rem;
+  }
+
+  p.hero-info {
+    max-width: 301px;
+    padding-bottom: 4rem;
+  }
 }
