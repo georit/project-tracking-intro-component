@@ -339,6 +339,10 @@ p.schedule-demo-info {
 }
 
 @media screen and (min-width: 1430px) {
+  div.wrapper {
+    padding-bottom: 0;
+  }
+
   h1.main-heading {
     font-size: 3.5rem;
     max-width: 605px;
